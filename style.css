@@ -809,14 +809,18 @@ a {
 
 @media (max-width: 600px) {
     .overlay {
-    background-color: rgba(0,0,0,0.4);
-    cursor: pointer;
+        background-color: rgba(0,0,0,0.4);
+        cursor: pointer;
     }
     .overlay .text {
-      color: #fff;
-      font-size:1.2em;
-      opacity: 1;
-      display: block;
+        color: #fff;
+        font-size:1.2em;
+        opacity: 1;
+        display: block;
+    }
+    .overlay:hover .text{
+        color: #fff;
+        font-size:1.2em;
     }
     .proj-title br {
         display: none;
@@ -837,6 +841,13 @@ a {
 @media (max-width: 522px) {
     .info {
         height: 240px;
+    }
+    .social-icons i {
+        font-size: 1.4em;
+    }
+    .social-icons {
+        top: 23px;
+        right: 10px;
     }
 }
 
