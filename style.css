@@ -813,9 +813,8 @@ a {
     cursor: pointer;
     }
     .overlay .text {
-      font-size: 1.5em;
       color: #fff;
-      font-size:1.6em;
+      font-size:1.2em;
       opacity: 1;
       display: block;
     }
