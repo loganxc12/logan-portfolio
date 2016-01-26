@@ -29,6 +29,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
 
 $(document).ready(function(){
     resizeDiv();
+    $(".hamburger-btn i").click(function() {
+        console.log('ran function!')
+        $(".dropdown").slideToggle();
+    })
 });
 
 $( window ).load(function(){

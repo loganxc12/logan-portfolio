@@ -8,5 +8,9 @@ app.controller('mainCtrl', function($scope) {
     $scope.toggleMenu = function() {
         $scope.menu = !$scope.menu;
     }
+    $scope.drop = false;
+    $scope.toggleDropdown = function() {
+        $scope.drop = !$scope.drop;
+    }
     
 })

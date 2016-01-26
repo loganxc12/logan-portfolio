@@ -1,4 +1,8 @@
 <div class='wrapper'>
+    
+    <div class='dropdown' ng-show='drop'>
+        <a href="/#/">Home</a><a href="/#/about">About</a><a href="/#/work">Work</a><a href="/#/contact">Contact</a>
+    </div>
 
     <div class='nav'>
         <div class='nav-items' ng-if='menu'>
@@ -12,10 +16,10 @@
             <a href='https://www.linkedin.com/in/logan-marshall-7389872a' target='_blank'><i class="fa fa-linkedin"></i></a>
             <a href='https://github.com/loganxc12' target='_blank'><i class="fa fa-github"></i></a>
         </div>
-        <div ng-hide='menu' class='hamburger-btn' ng-click='toggleMenu()'>
+        <div ng-hide='menu' class='hamburger-btn' ng-click='toggleMenu(); toggleDropdown()'>
             <i class="fa fa-bars"></i>
         </div>
-        <div ng-show='menu' class='times-btn' ng-click='toggleMenu()'>
+        <div ng-show='menu' class='times-btn' ng-click='toggleMenu(); toggleDropdown()'>
             <img src='Images/x-btn.jpg'/>
         </div>
     </div>
