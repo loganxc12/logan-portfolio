@@ -1,4 +1,7 @@
 <div class='wrapper'>
+    <div class='dropdown' ng-show='drop'>
+        <a href="/#/">Home</a><a href="/#/about">About</a><a href="/#/work">Work</a><a href="/#/contact">Contact</a>
+    </div>
 
     <div class='nav'>
         <div class='nav-items' ng-if='menu'>
@@ -12,10 +15,10 @@
             <a href='https://www.linkedin.com/in/logan-marshall-7389872a' target='_blank'><i class="fa fa-linkedin"></i></a>
             <a href='https://github.com/loganxc12' target='_blank'><i class="fa fa-github"></i></a>
         </div>
-        <div ng-hide='menu' class='hamburger-btn' ng-click='toggleMenu()'>
+        <div ng-hide='menu' class='hamburger-btn' ng-click='toggleMenu(); toggleDropdown()'>
             <i class="fa fa-bars"></i>
         </div>
-        <div ng-show='menu' class='times-btn' ng-click='toggleMenu()'>
+        <div ng-show='menu' class='times-btn' ng-click='toggleMenu(); toggleDropdown()'>
             <img src='Images/x-btn.jpg'/>
         </div>
     </div>
@@ -46,11 +49,6 @@
                 <div class='text'><h1>Travel Timeline</h1></div>
             </div>
         </div>
-        <!--<div class='upcoming'>
-            <div class='overlay'>
-                <div class='text'><h1>Coming Soon</h1></div>
-            </div>
-        </div>-->
     </div>
     <div class='slant2'>
     </div>
@@ -60,13 +58,6 @@
             <div class='proj-description'>
                 <h4>I'm proficient in HTML, CSS, Javascript, jQuery, AngularJs, <br> NodeJs and Mongo. I'm also a skilled writer, videographer <br> and designer. Plus, I can speak fluent Spanish and do a <br> handstand for over a minute (but who's counting?)</h4>
             </div>
-<!--
-            <i class="fa fa-hand-paper-o"></i>
-            <i class="fa fa-code"></i>
-            <i class="fa fa-pencil"></i>
-            <i class="fa fa-video-camera"></i>
--->
-
         </div>
     </div>
     <div class='footer'>
