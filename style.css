@@ -12,7 +12,7 @@ a {
 /* NAVIGATION */
 
 .dropdown {
-    background-color: rgba(0, 0, 0, 0.88);
+    background-color: rgba(0, 0, 0, 0.90);
     width: 100%;
     height: 100vh;
     margin-top: 70px;
@@ -99,6 +99,8 @@ a {
 
 /* HOMEPAGE */
 
+
+
 .hero {
     background: url('Images/mts.jpg');
    -webkit-background-size: cover;
@@ -116,11 +118,12 @@ a {
     width: 60%;
 }
 
-.title h2 {
+.title p {
     font-family: 'Montserrat', sans-serif;
     font-size: 2em;
     line-height: 1.3em;
-    color: #191B1C;
+    color: #000;
+    letter-spacing: 0.05em;
     font-weight: 900;
     padding-bottom: 10px;
 }
@@ -163,7 +166,7 @@ a {
     z-index: 1;
 }
 
-.slant:before {    
+.slant:before {
     top: -45px;
 }
 
@@ -181,16 +184,19 @@ a {
 .info-title {
     position: absolute;
     right: 0;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 21px;
-    line-height: 32px;
-    font-weight: 300;
-    color: #5e5e5e;
     display: block;
 }
 
+.info-title h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    line-height: 33px;
+    font-weight: 400;
+    color: #494F53;
+}
+
 .projects {
-    
+
     width: 100%;
     height: 350px;
     background-color: #F5F5F5;
@@ -220,11 +226,11 @@ a {
     font-family: 'Open Sans';
     font-size: 18px;
     line-height: 28px;
-    font-weight: 300;
-    color: #5e5e5e;
+    font-weight: 400;
+    color: #494F53;
     margin: 0 auto;
     text-transform: none;
-    
+
 }
 
 .my-work {
@@ -239,8 +245,16 @@ a {
 }
 
 .travel-timeline {
-    flex-grow: 2;
-    background: url('http://willjross.com/images/DSC_0538.jpg');
+    flex: 1;
+    background-image: url("https://static.pexels.com/photos/31905/pexels-photo.jpg");
+    background-size: cover;
+    display: flex;
+    height: 100%
+}
+
+.pomify {
+    flex: 1;
+    background-image: url("https://static.pexels.com/photos/25377/pexels-photo-25377.jpg");
     background-size: cover;
     display: flex;
     height: 100%
@@ -259,7 +273,7 @@ a {
     cursor: pointer;
 }
 
-.overlay .text{
+.overlay .text {
     font-size: 0em;
     color: rgba(0,0,0,0.0);
     transition:all 0.7s;
@@ -280,6 +294,19 @@ a {
     display: block;
 }
 
+.overlay:hover .text p {
+    color: #fff;
+    font-size:0.6em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    opacity: 1;
+    display: block;
+}
+
+span {
+  border-bottom: 2px solid #fff;
+}
+
 .my-work h1 {
     margin: auto;
     font-size: 1.5em;
@@ -287,7 +314,7 @@ a {
     color: white;
     text-transform: uppercase;
     font-weight: 800;
-    line-height: 1em;  
+    line-height: 1em;
 }
 
 .my-work h4 {
@@ -302,7 +329,7 @@ a {
     position: absolute;
     bottom: 30px;
     left: 50px;
-    
+
 }
 
 .upcoming {
@@ -338,18 +365,18 @@ a {
     z-index: 1;
 }
 
-.slant2:before {    
+.slant2:before {
     top: -45px;
 }
 
 .proj-title2 {
     margin: 0 auto;
-    margin-top: 0px;
+    margin-top: 40px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
     text-align: center;
-    
+
 }
 
 .proj-title2 h3 {
@@ -543,17 +570,17 @@ a {
     font-size: 21px;
     line-height: 32px;
     font-weight: 400;
-    color: #5e5e5e;
-    margin-bottom: 
+    color: #494F53;
+    margin-bottom:
 }
 
 .about-me p {
     margin-top: 30px;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
-    color: #5e5e5e;
+    color: #494F53;
 }
 
 .about me a {
@@ -593,7 +620,7 @@ a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     font-size: 1.4em;
-    text-align: center; 
+    text-align: center;
     display: flex;
 }
 
@@ -683,8 +710,8 @@ a {
 .work-title p {
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 26px;
-    color: #5e5e5e;
+    line-height: 28px;
+    color: #494F53;
     letter-spacing: 0.05em;
     margin-top: -18px;
     margin-bottom: 35px;
@@ -697,9 +724,27 @@ a {
 .t-timeline {
     width: 100%;
     height: 720px;
-    background-image: url('Images/cliff.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://static.pexels.com/photos/12569/photo-1444090542259-0af8fa96557e.jpeg');
     background-size: cover;
     display: flex;
+}
+
+.pomify-banner {
+    width: 100%;
+    height: 720px;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://static.pexels.com/photos/19032/pexels-photo.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.pomify-banner h1 {
+    font-size: 3.7em;
+    margin-bottom: 0;
+    color: #fff;
+}
+
+.pomify-banner p {
+    color: #fff;
 }
 
 .t-timeline h1 {
@@ -742,6 +787,50 @@ a {
     background-size: cover;
 }
 
+.contact-banner {
+    width: 100%;
+    height: 100vh;
+    background-color: #F5F5F5;
+    display: flex;
+}
+
+.contact-title {
+    margin: auto;
+    text-align: center;
+}
+
+.contact-title h3 {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    border-bottom: 1px solid lightgray;;
+    padding-bottom: 3px;
+    color: #191B1C;
+}
+
+
+.contact-title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    line-height: 1.3em;
+    color: #191B1C;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.contact-title p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    line-height: 28px;
+    color: #494F53;
+    letter-spacing: 0.05em;
+    margin-top: -18px;
+    margin-bottom: 35px;
+}
+
+.contact-title span {
+    border-bottom: 2px solid #5e5e5e;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1100px) {
@@ -758,6 +847,12 @@ a {
         display: none;
     }
     .work-title {
+        width: 80%;
+    }
+    .contact-title br {
+        display: none;
+    }
+    .contact-title {
         width: 80%;
     }
 }
@@ -782,7 +877,7 @@ a {
     .about-explore-buttons {
         margin-bottom: 60px;
     }
-    
+
 }
 
 @media (max-width: 650px) {
@@ -810,15 +905,15 @@ a {
     line-height: 30px;
     width: 85%;
   }
-  
-  .info-title h4 br, .proj-description h4 br {
+
+  .info-title h4 br, .proj-description p br {
       display: none;
   }
-  
+
   .proj-title, .proj-title2 {
       width: 80%;
   }
-  
+
   .info-title h4 {
       font-size: 20px;
   }
@@ -867,7 +962,7 @@ a {
     .about-explore-buttons {
         margin-bottom: 60px;
     }
-    
+
     .about-explore-buttons a {
         display: block;
         width: 100px;
@@ -967,7 +1062,7 @@ a {
     .learn-more {
         height: 380px;
     }
-  
+
 }
 
 @media (max-width: 369px) {
