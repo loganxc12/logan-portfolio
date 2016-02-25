@@ -677,6 +677,38 @@ span {
 
 /* WORK PAGE */
 
+.full-width-banner {
+    width: 100%;
+    height: 90vh;
+    background-image: url('Images/pomify-back.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.full-width-banner h1 {
+  margin: auto;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.05em;
+}
+
+.full-width-banner2 {
+    width: 100%;
+    height: 100vh;
+    background-image: url('http://willjross.com/images/DSC04148.jpg');
+    background-size: cover;
+    display: flex;
+}
+
+.full-width-banner2 h1 {
+  margin: auto;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.5em;
+  letter-spacing: 0.05em;
+}
+
 .work-banner {
     width: 100%;
     min-height: 350px;
@@ -723,16 +755,16 @@ span {
 
 .t-timeline {
     width: 100%;
-    height: 720px;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://static.pexels.com/photos/12569/photo-1444090542259-0af8fa96557e.jpeg');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://static.pexels.com/photos/31905/pexels-photo.jpg');
     background-size: cover;
     display: flex;
 }
 
 .pomify-banner {
     width: 100%;
-    height: 720px;
-    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://static.pexels.com/photos/19032/pexels-photo.jpg');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://static.pexels.com/photos/25377/pexels-photo-25377.jpg');
     background-size: cover;
     display: flex;
 }
@@ -769,11 +801,12 @@ span {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    background-color: #986B4D;
+    /*background-color: #986B4D;*/
     padding: 14px 35px;
     font-size: 0.8em;
     font-weight: 600;
     letter-spacing: 0.09em;
+    border: 2px solid #fff;
     border-radius: 3%;
     cursor: pointer;
 }
