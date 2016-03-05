@@ -1,9 +1,9 @@
 var app = angular.module('personalSite', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-    
+
     $urlRouterProvider.otherwise('/');
-    
+
     $stateProvider
         .state('home', {
                 url: '/',
@@ -23,6 +23,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('contact', {
                 url: '/contact',
                 templateUrl: 'views/contact.html',
+                controller: 'mainCtrl'
+        })
+        .state('pomtracker', {
+                url: '/pomtracker',
+                templateUrl: 'views/pom.html',
                 controller: 'mainCtrl'
         })
 })

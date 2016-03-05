@@ -5,13 +5,15 @@ html, body {
 }
 
 a {
-    color: #3E7091;
+    color: #3785BE;
     text-decoration: none;
 }
 
 /* FONTS */
 
 @font-face { font-family: Proxima Nova; src: url('fonts/ProximaNova-Regular.otf'); }
+@font-face { font-family: Trail Ranger; src: url('fonts/TrailRanger-Regular.otf'); }
+
 
 /* NAVIGATION */
 
@@ -103,10 +105,35 @@ a {
 
 /* HOMEPAGE */
 
+.logo {
+  position: absolute;
+  width: 100px;
+  height: 46px;
+  top: 20px;
+  left: 40px;
+}
 
+.navigation-links {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.navigation-links a {
+  font-size: 0.85em;
+  padding: 0 15px;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+}
+
+.navigation-links a:hover {
+  cursor: pointer;
+}
 
 .hero {
-    background: url('Images/mts.jpg');
+    background: linear-gradient(rgba(17, 17, 17, 0.58), rgba(17, 17, 17, 0.58)), url('Images/utah-lake.jpg');
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -114,22 +141,39 @@ a {
     background-position: center;
     display: flex;
     text-align: center;
-    height: 100vh;
+    height: 112vh;
+}
+
+.hero i {
+  margin: 0 auto;
 }
 
 .title {
     margin: auto;
-    width: 60%;
+    width: 80%;
+    padding-bottom: 40px;
+    margin-top: 215px;
+}
+
+.title h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.1em;
+    line-height: 1.3em;
+    color: #fff;
+    letter-spacing: 0.07em;
+    font-weight: 400;
+    margin-bottom: -10px;
 }
 
 .title p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2em;
-    line-height: 1.3em;
-    color: #000;
-    letter-spacing: 0.05em;
-    font-weight: 900;
-    padding-bottom: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  line-height: 35px;
 }
 
 .title span {
@@ -137,17 +181,40 @@ a {
 }
 
 .title a {
+    display: block;
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 35px;
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    background-color: #986B4D;
-    padding: 18px;
-    font-size: 0.8em;
-    font-weight: 600;
+    background-color: #3785BE;
+    /*border: 3px solid #3785BE;*/
+    padding: 15px 28px;
+    font-size: 13px;
+    font-weight: 300;
     margin-top: 0px;
-    letter-spacing: 0.09em;
+    letter-spacing: 0.12em;
     cursor: pointer;
-    border-radius: 3%;
+    /*border-radius: 3%;*/
+}
+
+.hero i {
+  position: absolute;
+  color: #fff;
+  bottom: 30px;
+  margin: 0 auto;
+  opacity: 0.5;
+}
+
+.projects-banner {
+  height: 10vh;
+  background-color: #f9f9fa;
+}
+
+.title i {
+  color: #fff;
+  font-size: 2.5em;
 }
 
 .slant {
@@ -185,6 +252,17 @@ a {
     z-index: 100;
 }
 
+.case-info {
+  width: 93%;
+  min-height: 250px;
+  background-color: #fff;
+  margin-top: -40px;
+  position: relative;
+  text-align: left;
+  left: 20px;
+  z-index: 100;
+}
+
 .info-title {
     position: absolute;
     right: 0;
@@ -192,18 +270,18 @@ a {
 }
 
 .info-title h4 {
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 21px;
-    line-height: 32px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 19px;
+    line-height: 30px;
     font-weight: 400;
-    color: #494F53;
+    color: #333c4e;
 }
 
 .projects {
 
     width: 100%;
     height: 350px;
-    background-color: #F5F5F5;
+    background-color: #F9F9FA;
     clear: both;
     display: flex;
     text-align: center;
@@ -218,6 +296,10 @@ a {
     text-align: center;
 }
 
+.proj-title a {
+  border-bottom: 1px solid #3785BE;
+}
+
 .proj-title h3 {
     display: inline-block;
     padding-bottom: 7px;
@@ -227,11 +309,11 @@ a {
 
 .proj-description {
     width: 100%;
-    font-family: 'Proxima Nova', sans-serif;
-    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
     line-height: 28px;
     font-weight: 400;
-    color: #494F53;
+    color: #323A45;
     margin: 0 auto;
     text-transform: none;
 
@@ -250,15 +332,16 @@ a {
 
 .travel-timeline {
     flex: 1;
-    background-image: url("https://static.pexels.com/photos/31905/pexels-photo.jpg");
+    background-image: url("http://loganxc12.github.io/images/andy2.jpg");
     background-size: cover;
     display: flex;
-    height: 100%
+    flex-direction: column;
+    /*height: 100%*/
 }
 
 .pomify {
     flex: 1;
-    background-image: url("https://static.pexels.com/photos/25377/pexels-photo-25377.jpg");
+    background-image: linear-gradient(rgba(32, 41, 52, 0.65), rgba(32, 41, 52, 0.65)), url("http://pomtracker.com/Images/homepage-mtn.jpg");
     background-size: cover;
     display: flex;
     height: 100%
@@ -267,28 +350,23 @@ a {
 .overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0,0,0,0.1);
     transition: all 0.3s;
     position:relative;
 }
 
 .overlay:hover {
-    background-color: rgba(0,0,0,0.4);
     cursor: pointer;
 }
 
-.overlay .text {
-    font-size: 0em;
-    color: rgba(0,0,0,0.0);
+.text {
+    font-size: 1.6em;
+    color: #fff;
     transition:all 0.7s;
-    position:absolute;
-    display:inline-block;
-    top:200px;
-    bottom:0;
-    left:0;
-    right:0;
+    display: block;
     margin:auto;
-    display: none;
+    padding-top:20px;
+    /*display: none;*/
 }
 
 .overlay:hover .text{
@@ -298,7 +376,7 @@ a {
     display: block;
 }
 
-.overlay:hover .text p {
+.text p {
     color: #fff;
     font-size:0.6em;
     font-family: 'Montserrat', sans-serif;
@@ -394,7 +472,7 @@ span {
 .learn-more {
     width: 100%;
     height: 310px;
-    background-color: #F5F5F5;
+    background-color: #F9F9FA;
     display: flex;
 }
 
@@ -420,20 +498,18 @@ span {
 }
 
 .explore h3 {
-    bargin-bottom: 40px;
+    margin-bottom: 23px;
 }
 
 .explore a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    background-color: #986B4D;
+    background-color: #3785BE;
     padding: 14px 38px;
     font-size: 0.8em;
-    font-weight: 600;
     letter-spacing: 0.09em;
     margin: 15px;
-    border-radius: 3%;
     cursor: pointer;
 }
 
@@ -485,9 +561,9 @@ span {
 .bottom p {
     margin-top: -30px;
     color: #A3A2A2;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
     font-weight: 600;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.07em;
     font-size: 11px;
 }
 
@@ -523,23 +599,27 @@ span {
 }
 
 .about-title a {
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #986B4D;
-    padding: 18px;
-    font-size: 0.8em;
-    font-weight: 600;
-    margin-top: 0px;
-    letter-spacing: 0.09em;
-    cursor: pointer;
-    border-radius: 3%;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #3785BE;
+  /*border: 3px solid #3785BE;*/
+  padding: 16px 38px;
+  font-size: 14px;
+  font-weight: 300;
+  margin-top: 0px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
 }
 
 .about-title p {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
     font-size: 18px;
-    line-height: 28px;
+    line-height: 26px;
     color: #fff;
     letter-spacing: 0.05em;
     margin-top: -18px;
@@ -571,7 +651,7 @@ span {
 
 .about-me h4 {
     margin-top: 30px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
     font-size: 21px;
     line-height: 32px;
     font-weight: 400;
@@ -581,7 +661,7 @@ span {
 
 .about-me p {
     margin-top: 30px;
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     font-weight: 400;
@@ -684,10 +764,33 @@ span {
 
 .full-width-banner {
     width: 100%;
-    height: 90vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://static.pexels.com/photos/7060/man-people-space-desk-large.jpg');
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('http://pomtracker.com/Images/homepage-mtn.jpg');
     background-size: cover;
     display: flex;
+}
+
+.work-banner-title {
+  width: 50%;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.work-banner-title p, .work-banner-title a {
+  color: #fff;
+  font-size:1em;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+.site-link {
+  border-bottom: 2px solid #fff;
+  display: inline-block;
 }
 
 .full-width-banner h1 {
@@ -697,12 +800,14 @@ span {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5em;
   letter-spacing: 0.05em;
+  display: block;
+  margin-bottom: 5px;
 }
 
 .full-width-banner2 {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://static.pexels.com/photos/7310/nature-trees-hut-green-large.jpg');
+    background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('http://loganxc12.github.io/images/andy2.jpg');
     background-size: cover;
     display: flex;
 }
@@ -857,7 +962,7 @@ span {
 }
 
 .contact-title p {
-    font-family: 'Proxima Nova', sans-serif;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
     font-size: 18px;
     line-height: 28px;
     color: #494F53;
@@ -870,13 +975,94 @@ span {
     border-bottom: 2px solid #5e5e5e;
 }
 
+/* POM TRACKER CASE STUDY */
+
+.pom-hero {
+  /*background: linear-gradient(rgba(32, 41, 52, 0.65), rgba(32, 41, 52, 0.65)), url("http://pomtracker.com/Images/homepage-mtn.jpg");*/
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  text-align: center;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.pom-hero video {
+  width: 100%;
+}
+
+.case-study-title {
+    margin: auto;
+    width: 70%;
+    padding-bottom: 40px;
+}
+
+.case-study-title p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2em;
+  line-height: 1.3em;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.case-study-title a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1em;
+  line-height: 1.3em;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  text-transform: uppercase;
+  border-bottom: 2px solid #fff;
+  margin-top: -20px;
+}
+
+.case-study-title i {
+  color: #fff;
+}
+
+.info-title a {
+  border-bottom: 1px solid #3E7091;
+}
+
+.case-study-img {
+  width: 100%;
+}
+
+.case-study-banner {
+  width: 100%;
+  height: 400px;
+  background-color: #fff;
+  display: flex;
+}
+
+.case-study-about {
+  background-color: red;
+  width: 50%;
+}
+
+.case-study-description {
+  background-color: #fff;
+  width: 50%;
+}
+
+.screenshots-img {
+  width: 100%;
+  margin-top: -20px;
+}
+
 /* MEDIA QUERIES */
 
 @media (max-width: 1100px) {
   .title {
     width: 70%;
   }
-  .title h2 br {
+  .title p br {
       display: none;
   }
 }
@@ -893,6 +1079,10 @@ span {
     }
     .contact-title {
         width: 80%;
+    }
+    .my-work {
+      height:750px;
+      flex-direction: column;
     }
 }
 
@@ -995,13 +1185,18 @@ span {
     }
 }
 @media (max-width: 535px) {
+    .about-title a {
+      display: none;
+    }
     .projects {
         height: 390px;
     }
     .about-explore-buttons {
         margin-bottom: 60px;
     }
-
+    .work-banner-title p {
+      display: none;
+    }
     .about-explore-buttons a {
         display: block;
         width: 100px;
@@ -1078,19 +1273,13 @@ span {
 
 @media (max-width: 442px) {
     .info {
-        height: 270px;
+        height: 250px;
     }
 }
 
 @media (max-width: 420px) {
     .projects {
-        height: 405px;
-    }
-}
-
-@media (max-width: 384px) {
-    .projects {
-        height: 425px;
+        height: 395px;
     }
 }
 
@@ -1099,7 +1288,7 @@ span {
       font-size: 18px;
     }
     .learn-more {
-        height: 380px;
+        height: 390px;
     }
 
 }
