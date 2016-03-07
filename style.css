@@ -109,7 +109,7 @@ a {
   position: absolute;
   width: 100px;
   height: 46px;
-  top: 20px;
+  top: 38px;
   left: 40px;
 }
 
@@ -276,8 +276,8 @@ a {
 }
 
 .info-title h4 {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 19px;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
+    font-size: 20px;
     line-height: 30px;
     font-weight: 400;
     color: #333c4e;
@@ -314,8 +314,8 @@ a {
 
 .proj-description {
     width: 100%;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 17px;
+    font-family: 'Proxima Nova', 'Open Sans', sans-serif;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 400;
     color: #323A45;
@@ -337,7 +337,7 @@ a {
 
 .travel-timeline {
     flex: 1;
-    background-image: linear-gradient(rgba(32, 41, 52, 0.65), rgba(32, 41, 52, 0.65)), url("http://willjross.com/images/DSC06930.jpg");
+    background-image: linear-gradient(rgba(32, 41, 52, 0.75), rgba(32, 41, 52, 0.65)), url("Images/swiss.jpg");
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -346,7 +346,7 @@ a {
 
 .pomify {
     flex: 1;
-    background-image: linear-gradient(rgba(32, 41, 52, 0.65), rgba(32, 41, 52, 0.65)), url("https://static.pexels.com/photos/6249/hands-woman-legs-laptop.jpg");
+    background-image: linear-gradient(rgba(32, 41, 52, 0.75), rgba(32, 41, 52, 0.65)), url("Images/laptop.jpg");
     background-size: cover;
     background-position: center;
     display: flex;
@@ -372,6 +372,7 @@ a {
     display: block;
     margin:auto;
     padding-top:20px;
+    text-align: center;
     /*display: none;*/
 }
 
@@ -393,7 +394,7 @@ a {
 }
 
 #my-work-btn {
-  background-color: #4385F5;
+  /*background-color: #4385F5;*/
   color: #fff;
   font-size:0.4em;
   letter-spacing: 0.07em;
@@ -402,7 +403,7 @@ a {
   opacity: 1;
   display: inline-block;
   padding: 12px 18px;
-  /*border: 1px solid #fff;*/
+  border: 1px solid #fff;
   margin-top: 10px;
 }
 
@@ -410,7 +411,11 @@ a {
   font-size: 1.4em;
 }
 
-.my-work h1 {
+.text a {
+  border: none;
+}
+
+.text h1 {
     margin: auto;
     font-size: 1.5em;
     font-family: 'Montserrat', sans-serif;
@@ -520,7 +525,7 @@ a {
 
 .explore h2 {
     font-size: 1.35em;
-    margin-bottom: 23px;
+    margin-bottom: 43px;
 }
 
 .explore a {
@@ -592,7 +597,7 @@ a {
 /* ABOUT PAGE */
 
 .about-hero {
-    background: url('Images/canyon.jpg');
+    background: linear-gradient(rgba(17, 17, 17, 0.58), rgba(17, 17, 17, 0.58)), url('http://willjross.com/images/_DSC3342.jpg');
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -600,7 +605,7 @@ a {
     background-position: center;
     display: flex;
     text-align: center;
-    height: 100vh;
+    height: 112vh;
 }
 
 .about-title {
@@ -690,19 +695,19 @@ a {
     color: #494F53;
 }
 
-.about me a {
-    text-decoration: underline;
+.about-me a {
+    border-bottom: 1px solid #4385F5;
 }
 
 .about-explore-buttons {
-    margin: 40px auto 30px auto;
+    margin: 50px auto 30px auto;
 }
 
 .about-explore-buttons a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    background-color: #986B4D;
+    background-color: #4385F5;
     padding: 14px 40px;
     font-size: 0.8em;
     font-weight: 600;
@@ -784,6 +789,91 @@ a {
 
 /* WORK PAGE */
 
+.work-hero {
+    background: linear-gradient(rgba(17, 17, 17, 0.58), rgba(17, 17, 17, 0.58)), url('Images/work-banner.jpg');
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    text-align: center;
+    height: 350px;
+}
+
+.work-title {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 80%;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-wrapper {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  height: 350px;
+}
+
+/*.projects-wrapper p {
+  color: #fff;
+  font-size:0.6em;
+  letter-spacing: 0.07em;
+  font-weight: 300;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  opacity: 1;
+}*/
+
+.travel-timeline-img {
+  display: flex;
+  flex: 1;
+  background: linear-gradient(rgba(32, 41, 52, 0.75), rgba(32, 41, 52, 0.65)), url("http://willjross.com/images/IMG_3296.jpg");
+  background-size: cover;
+  margin-right: 10px;
+}
+
+.pomify-img {
+  display: flex;
+  flex: 1;
+  background: linear-gradient(rgba(32, 41, 52, 0.75), rgba(32, 41, 52, 0.65)), url("http://willjross.com/images/DSC_1633.jpg");
+  background-size: cover;
+  margin-left: 10px;
+}
+
+.work-hero h2 {
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.1em;
+  line-height: 1.3em;
+  color: #fff;
+  letter-spacing: 0.07em;
+  font-weight: 800;
+}
+
+.work-info {
+  width: 100%;
+  height: 505px;
+}
+
+.project-in-mind {
+  text-align: center;
+  margin: 40px auto;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: #000;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.work-info a {
+  border-bottom: 1px solid #4385F5;
+}
+
 .full-width-banner {
     width: 100%;
     height: 100vh;
@@ -849,7 +939,7 @@ a {
     display: flex;
 }
 
-.work-title {
+/*.work-title {
     margin: auto;
     text-align: center;
 }
@@ -884,7 +974,7 @@ a {
 
 .work-title span {
     border-bottom: 2px solid #5e5e5e;
-}
+}*/
 
 .t-timeline {
     width: 100%;
