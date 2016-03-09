@@ -790,7 +790,7 @@ a {
 /* WORK PAGE */
 
 .work-hero {
-    background: linear-gradient(rgba(17, 17, 17, 0.58), rgba(17, 17, 17, 0.58)), url('Images/work-banner.jpg');
+    background: linear-gradient(rgba(17, 17, 17, 0.58), rgba(17, 17, 17, 0.58)), url('https://static.pexels.com/photos/6565/apple-desk-laptop-working.jpg');
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
@@ -798,17 +798,26 @@ a {
     background-position: center;
     display: flex;
     text-align: center;
-    height: 350px;
+    height: 400px;
 }
 
 .work-title {
-  margin: 0 auto;
-  margin-top: 30px;
+  margin: auto;
+  margin-top: 170px;
   width: 80%;
   width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+
+.work-title p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #fff;
+  letter-spacing: 0.05em;
+  font-weight: 300;
+  margin-top: 12px;
 }
 
 .projects-wrapper {
@@ -852,6 +861,10 @@ a {
   color: #fff;
   letter-spacing: 0.07em;
   font-weight: 800;
+}
+
+.work-hero p {
+
 }
 
 .work-info {
