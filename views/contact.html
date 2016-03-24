@@ -4,7 +4,7 @@
         <a href="/#/">Home</a><a href="/#/about">About</a><a href="/#/work">Work</a><a href="/#/contact">Contact</a>
     </div>
 
-    <div class='nav'>
+    <!-- <div class='nav'>
         <div class='nav-items' ng-if='menu'>
             <a href='/#/'><h3 class='hvr-underline-from-left'>Home</h3></a>
             <a href='/#/about'><h3 class='hvr-underline-from-left'>About</h3></a>
@@ -22,22 +22,29 @@
         <div ng-show='menu' class='times-btn' ng-click='toggleMenu(); toggleDropdown()'>
             <img src='Images/x-btn.jpg'/>
         </div>
-    </div>
+    </div> -->
 
     <div class='contact-banner'>
+      <i class="fa fa-bars" id="navicon" ng-click="toggleDropdown()"></i>
+      <a href='/#/'><img class='logo' src='Images/logan3.png'></a>
+      <div class='navigation-links'>
+        <a href='/#/about'><p class='hvr-underline-from-left'>ABOUT</p></a>
+        <a href='/#/work'><p class='hvr-underline-from-left'>WORK</p></a>
+        <a href='/#/contact'><p class='hvr-underline-from-left'>CONTACT</p></a>
+      </div>
         <div class='contact-title'>
-            <h2>Get in touch</h2>
-            <p>If you'd like to work with me or you just want to say hello, shoot an <br> email to <span>logangmarshall@gmail.com.</span> I'll respond as quickly as I can.</p>
+            <h2>GET IN TOUCH</h2>
+            <p><em>logangmarshall@gmail.com <br> (207) 450-1067 </em></p>
         </div>
     </div>
 
-        <div class='footer'>
+    <div class='footer'>
         <div class='explore'>
-            <h3>Continue Exploring</h3>
-            <div class='explore-buttons'>
-                <a href='/#/about' class='hvr-sweep-to-bottom'>About</a>
-                <a href='/#/work' class='hvr-sweep-to-bottom'>Work</a>
-                <a href='/#/contact' class='hvr-sweep-to-bottom'>Contact</a>
+            <h2>Continue Exploring</h2>
+            <div class='contact-explore-buttons'>
+                <a href='/#/'>Home</a>
+                <a href='/#/about'>About</a>
+                <a href='/#/work'>Work</a>
             </div>
         </div>
     </div>

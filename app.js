@@ -35,7 +35,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 $(document).ready(function(){
     $(this).scrollTop(0);
     resizeDiv();
-    $(".hamburger-btn i").click(function() {
+    $("#navicon").click(function() {
         console.log('ran function!')
         $(".dropdown").slideToggle();
     })
